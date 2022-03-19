@@ -5,13 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>POKEDEX</title>
 </head>
 
-<body>
+<!-- <body>
     <h1>Pokedex</h1>
-    <input type="text" name="pokename" id="pokename" placeholder="Ingresa el nombre del pokemon">
-    <img src="" alt="pokemon">
+    <input type="text" name="pokename" id="pokeName" placeholder="Ingresa el nombre del pokemon">
+    <br>
+    <img src="./img/logo pokemon.png" alt="pokemon" id="pokeImg" width="300px">
+    <br>
+    <button type="submit" onclick="fetchPokemon()">Cambiar Pokemon</button>
+
+    <script src="./js/app.js"></script>
+
+
+</body> -->
+
+<body>
+    <div class="pokedex">
+        <div class="columna-izq">
+            <div class="detalles">
+                <div class="detalles-circulo"></div>
+                <div class="detalles-rojo , detalles-circulos"></div>
+                <div class="detalles-amarillo , detalles-circulos"></div>
+                <div class="detalles-verde , detalles-circulos"></div>
+            </div>
+            <div>
+                <input class="info-input" type="text" name="pokename" id="pokeName" placeholder="Ingresa el nombre del pokemon o ID">
+            </div>
+            <div class="info-screen">
+                <div id="species" class="info">
+                    <div class="label">Especie:</div>
+                    <div class="desc">...</div>
+                </div>
+                <div id="type" class="info">
+                    <div class="label">Tipo:</div>
+                    <div class="desc">...</div>
+                </div>
+                <div id="height" class="info">
+                    <div class="label">Movimientos:</div>
+                    <div class="desc">...</div>
+                </div>
+                <div id="weight" class="info">
+                    <div class="label">Estadisticas:</div>
+                    <div class="desc">...</div>
+                </div>
+                <!-- <div id="evolution" class="info">
+                    <div class="label">Evolution Chain:</div>
+                    <div class="desc">...</div>
+                </div> -->
+                <div id="bio" class="info">
+                    <div class="label">Biology:</div>
+                    <div class="desc">...</div>
+                </div>
+            </div>
+        </div>
+        <div class="columna-der">
+            <img src="./img/Pokeball.png" alt="pokemon" id="pokeImg" width="300px">
+
+            <button onclick="fetchPokemon()">Ver pokemon</button>
+        </div>
+    </div>
     <script src="./js/app.js"></script>
 </body>
 
