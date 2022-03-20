@@ -13,6 +13,10 @@ const fetchPokemon = () => {
         }
     }).then((data) => {
         if (data) {
+            document.getElementById('name').innerHTML = data.name.toUpperCase();
+            document.getElementById('type').innerHTML = data.types[0].type.name.toUpperCase();
+            document.getElementById('move').innerHTML = data.moves[0].move.name.toUpperCase();
+            document.getElementById('move1').innerHTML = data.moves[1].move.name.toUpperCase();
             console.log(data);
             let pokeImg = data.sprites.front_default;
             pokeImage(pokeImg);
