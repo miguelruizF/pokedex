@@ -9,19 +9,6 @@
     <title>POKEDEX</title>
 </head>
 
-<!-- <body>
-    <h1>Pokedex</h1>
-    <input type="text" name="pokename" id="pokeName" placeholder="Ingresa el nombre del pokemon">
-    <br>
-    <img src="./img/logo pokemon.png" alt="pokemon" id="pokeImg" width="300px">
-    <br>
-    <button type="submit" onclick="fetchPokemon()">Cambiar Pokemon</button>
-
-    <script src="./js/app.js"></script>
-
-
-</body> -->
-
 <body>
     <div class="pokedex">
         <div class="columna-izq">
@@ -51,24 +38,20 @@
                     <div class="label">Movimiento 2:</div>
                     <div id="move1" class="desc">...</div>
                 </div>
-                <div id="weight" class="info">
+                <div class="info">
                     <div class="label">Estadisticas:</div>
-                    <div class="desc">...</div>
+                    <div id="estadist" class="desc">
+                        <p>HP ------------- <span id="hp">0</span></p>
+                        <p>ATTACK ------- <span id="atk">0</span></p>
+                        <p>DEFENSE ----- <span id="dfs">0</span></p>
+                    </div>
                 </div>
-                <!-- <div id="evolution" class="info">
-                    <div class="label">Evolution Chain:</div>
-                    <div class="desc">...</div>
-                </div> -->
-                <!-- <div id="bio" class="info">
-                    <div class="label">Biology:</div>
-                    <div class="desc">...</div>
-                </div> -->
             </div>
         </div>
         <div class="columna-der">
             <img src="./img/Pokeball.png" alt="pokemon" id="pokeImg" width="300px">
 
-            <button onclick="fetchPokemon()">Ver pokemon</button>
+            <button class="btn_poke" onclick="fetchPokemon()">Ver pokemon</button>
         </div>
     </div>
     <script src="./js/app.js"></script>
